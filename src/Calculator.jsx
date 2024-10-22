@@ -19,29 +19,31 @@ const Calculator = () => {
     setTotal("");
   };
 
-  const Del = () =>{
-    setOperation(numHolder.slice(0,-1) + "");
+  const Del = () => {
+    setOperation(numHolder.slice(0, -1) + "");
     setTotal("");
-  }
+  };
 
   return (
     <>
       <div className="container-fluid  vh-100">
-
         <div className="row h-75 m-0">
-  
-          <div className="col-12 col-lg-10 d-flex justify-content-center" >
+          <div className="col-12 col-lg-10 d-flex justify-content-center">
             <div className="calcContainer ">
-            <h2>Calc</h2>
+              <h2>Calc</h2>
               <div className="screen ">
                 <div className="row  m-0 d-flex">
                   <div className="col-9  toCalc">
-                    <h3 className="">{operation}</h3>
+                    <h3 className="" translate="no">
+                      {operation}
+                    </h3>
                   </div>
                   <div className="col-3"></div>
                   <div className="col-3"></div>
                   <div className="col-9  total m-0 ">
-                    <h3 className=" m-0">{total}</h3>
+                    <h3 className=" m-0" translate="no">
+                      {total}
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -53,6 +55,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         value={1}
                         onClick={ShowNumbers}
                       >
@@ -61,6 +64,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={2}
                       >
@@ -69,6 +73,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={3}
                       >
@@ -79,6 +84,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={4}
                       >
@@ -87,6 +93,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={5}
                       >
@@ -95,6 +102,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={6}
                       >
@@ -105,6 +113,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={7}
                       >
@@ -113,6 +122,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={8}
                       >
@@ -121,6 +131,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={9}
                       >
@@ -131,6 +142,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={"."}
                       >
@@ -139,6 +151,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={0}
                       >
@@ -147,6 +160,7 @@ const Calculator = () => {
                       <button
                         type="button"
                         className="btn rounded number"
+                        translate="no"
                         onClick={ShowNumbers}
                         value={"/"}
                       >
@@ -187,6 +201,7 @@ const Calculator = () => {
                         className="btn rounded functions "
                         value={"*"}
                         onClick={ShowNumbers}
+                        translate="no"
                       >
                         x
                       </button>
@@ -196,6 +211,7 @@ const Calculator = () => {
                     <button
                       type="button"
                       className="btn rounded number"
+                      translate="no"
                       id="reset"
                       onClick={Reset}
                     >
@@ -204,6 +220,7 @@ const Calculator = () => {
                     <button
                       type="button"
                       className="btn rounded number"
+                      translate="no"
                       id="equals"
                       onClick={Calculate}
                     >
